@@ -7,6 +7,7 @@ converts 4-20ma signal to 0-5 V signal
 ****************************************************/
 
 #define SensorAnalogPin A2  //this pin read the analog voltage from the NH3 sensor
+#define Sensor2AnalogPin A3 //2nd NH3 sensor analog voltage
 #define RH_AnalogPin A5
 #define T_AnalogPin A4
 #define VREF  5.125   //default uno reference
