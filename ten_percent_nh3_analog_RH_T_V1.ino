@@ -65,7 +65,7 @@ void loop()
     }
     
     Serial.print(ppm,2);
-    Serial.print(" % | ");
+    Serial.print(" % NH3 | ");
   
     Serial.print(tempV,3);
     Serial.print(" V | ");
@@ -94,17 +94,20 @@ void loop()
     //delay(1);
 }
 
-double analogReadBits(){
+double analogReadBits()
+{
   analogBits = analogRead(SensorAnalogPin);
   return analogBits;
 }
 
-double analogReadTemp(){
+double analogReadTemp()
+{
   analogTBits = analogRead(T_AnalogPin);
   return analogTBits/1023*236-22;
 }
 
-double analogReadRH(){
+double analogReadRH()
+{
   analogRHBits = analogRead(RH_AnalogPin);
   return analogRHBits/10.23;
 }
